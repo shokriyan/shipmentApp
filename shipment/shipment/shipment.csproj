@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>shipment</RootNamespace>
+    <AssemblyName>shipment</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clDataSet.cs">
+      <DependentUpon>clDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmClearance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClearance.Designer.cs">
+      <DependentUpon>frmClearance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMRequeset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMRequeset.Designer.cs">
+      <DependentUpon>frmMRequeset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRPTPack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRPTPack.Designer.cs">
+      <DependentUpon>frmRPTPack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWaybill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWaybill.Designer.cs">
+      <DependentUpon>frmWaybill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="packinglistDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>packinglistDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shipmentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shipmentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="shipmentDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>shipmentDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmClearance.resx">
+      <DependentUpon>frmClearance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMRequeset.resx">
+      <DependentUpon>frmMRequeset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRPTPack.resx">
+      <DependentUpon>frmRPTPack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWaybill.resx">
+      <DependentUpon>frmWaybill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rptCritical.rdlc" />
+    <EmbeddedResource Include="rptOther.rdlc" />
+    <EmbeddedResource Include="rptPaking.rdlc" />
+    <EmbeddedResource Include="rptSlip.rdlc" />
+    <None Include="App.config" />
+    <None Include="clDataSet.xsc">
+      <DependentUpon>clDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="clDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>clDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="clDataSet.xss">
+      <DependentUpon>clDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packinglistDataSet.xsc">
+      <DependentUpon>packinglistDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packinglistDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>packinglistDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packinglistDataSet.xss">
+      <DependentUpon>packinglistDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="shipmentDataSet.xsc">
+      <DependentUpon>shipmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="shipmentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shipmentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shipmentDataSet.xss">
+      <DependentUpon>shipmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="shipmentDataSet1.xsc">
+      <DependentUpon>shipmentDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="shipmentDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>shipmentDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="shipmentDataSet1.xss">
+      <DependentUpon>shipmentDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

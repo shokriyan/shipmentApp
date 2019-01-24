@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="packinglistDataSet" targetNamespace="http://tempuri.org/packinglistDataSet.xsd" xmlns:mstns="http://tempuri.org/packinglistDataSet.xsd" xmlns="http://tempuri.org/packinglistDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="shipmentConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="shipmentConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.shipment.Properties.Settings.GlobalReference.Default.shipmentConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="detailTableAdapter" GeneratorDataComponentClassName="detailTableAdapter" Name="detail" UserDataComponentName="detailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="shipmentConnectionString (Settings)" DbObjectName="shipment.dbo.detail" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        id, shipmentID, line, lpo, requisition, prjCode, material, remark, amount
+FROM            detail</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="shipmentID" DataSetColumn="shipmentID" />
+              <Mapping SourceColumn="line" DataSetColumn="line" />
+              <Mapping SourceColumn="lpo" DataSetColumn="lpo" />
+              <Mapping SourceColumn="requisition" DataSetColumn="requisition" />
+              <Mapping SourceColumn="material" DataSetColumn="material" />
+              <Mapping SourceColumn="remark" DataSetColumn="remark" />
+              <Mapping SourceColumn="amount" DataSetColumn="amount" />
+              <Mapping SourceColumn="prjCode" DataSetColumn="prjCode" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="packinglistDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="packinglistDataSet" msprop:Generator_UserDSName="packinglistDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="detail" msprop:Generator_TableClassName="detailDataTable" msprop:Generator_TableVarName="tabledetail" msprop:Generator_RowChangedName="detailRowChanged" msprop:Generator_TablePropName="detail" msprop:Generator_RowDeletingName="detailRowDeleting" msprop:Generator_RowChangingName="detailRowChanging" msprop:Generator_RowEvHandlerName="detailRowChangeEventHandler" msprop:Generator_RowDeletedName="detailRowDeleted" msprop:Generator_RowClassName="detailRow" msprop:Generator_UserTableName="detail" msprop:Generator_RowEvArgName="detailRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="shipmentID" msprop:Generator_ColumnVarNameInTable="columnshipmentID" msprop:Generator_ColumnPropNameInRow="shipmentID" msprop:Generator_ColumnPropNameInTable="shipmentIDColumn" msprop:Generator_UserColumnName="shipmentID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="line" msprop:Generator_ColumnVarNameInTable="columnline" msprop:Generator_ColumnPropNameInRow="line" msprop:Generator_ColumnPropNameInTable="lineColumn" msprop:Generator_UserColumnName="line" type="xs:int" />
+              <xs:element name="lpo" msprop:Generator_ColumnVarNameInTable="columnlpo" msprop:Generator_ColumnPropNameInRow="lpo" msprop:Generator_ColumnPropNameInTable="lpoColumn" msprop:Generator_UserColumnName="lpo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="requisition" msprop:Generator_ColumnVarNameInTable="columnrequisition" msprop:Generator_ColumnPropNameInRow="requisition" msprop:Generator_ColumnPropNameInTable="requisitionColumn" msprop:Generator_UserColumnName="requisition">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="material" msprop:Generator_ColumnVarNameInTable="columnmaterial" msprop:Generator_ColumnPropNameInRow="material" msprop:Generator_ColumnPropNameInTable="materialColumn" msprop:Generator_UserColumnName="material">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="90" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="remark" msprop:Generator_ColumnVarNameInTable="columnremark" msprop:Generator_ColumnPropNameInRow="remark" msprop:Generator_ColumnPropNameInTable="remarkColumn" msprop:Generator_UserColumnName="remark">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="amount" msprop:Generator_ColumnVarNameInTable="columnamount" msprop:Generator_ColumnPropNameInRow="amount" msprop:Generator_ColumnPropNameInTable="amountColumn" msprop:Generator_UserColumnName="amount" type="xs:double" />
+              <xs:element name="prjCode" msprop:Generator_ColumnVarNameInTable="columnprjCode" msprop:Generator_ColumnPropNameInRow="prjCode" msprop:Generator_ColumnPropNameInTable="prjCodeColumn" msprop:Generator_UserColumnName="prjCode" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:detail" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

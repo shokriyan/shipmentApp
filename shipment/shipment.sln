@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "shipment", "shipment\shipment.csproj", "{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OHSSHIPMENT", "Setup1\Setup1.vdproj", "{B4980E8F-DB54-41D7-AE1C-AF363534904E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Default = CD_ROM|Default
+		CD_ROM|x86 = CD_ROM|x86
+		Debug|Default = Debug|Default
+		Debug|x86 = Debug|x86
+		DVD-5|Default = DVD-5|Default
+		DVD-5|x86 = DVD-5|x86
+		Release|Default = Release|Default
+		Release|x86 = Release|x86
+		SingleImage|Default = SingleImage|Default
+		SingleImage|x86 = SingleImage|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.CD_ROM|Default.ActiveCfg = Debug|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.CD_ROM|x86.ActiveCfg = Release|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.CD_ROM|x86.Build.0 = Release|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.Debug|Default.ActiveCfg = Debug|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.Debug|x86.ActiveCfg = Debug|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.DVD-5|Default.ActiveCfg = Debug|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.DVD-5|x86.ActiveCfg = Debug|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.Release|Default.ActiveCfg = Release|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.Release|x86.ActiveCfg = Release|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.Release|x86.Build.0 = Release|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.SingleImage|Default.ActiveCfg = Debug|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.SingleImage|x86.ActiveCfg = Debug|x86
+		{75BD4B8D-1A9A-40D5-BD4B-CCED3F06EB04}.SingleImage|x86.Build.0 = Debug|x86
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.CD_ROM|Default.ActiveCfg = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.CD_ROM|Default.Build.0 = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.CD_ROM|x86.ActiveCfg = Release
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.Debug|Default.ActiveCfg = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.Debug|Default.Build.0 = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.Debug|x86.ActiveCfg = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.DVD-5|Default.ActiveCfg = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.DVD-5|Default.Build.0 = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.DVD-5|x86.ActiveCfg = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.Release|Default.ActiveCfg = Release
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.Release|Default.Build.0 = Release
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.Release|x86.ActiveCfg = Release
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.SingleImage|Default.ActiveCfg = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.SingleImage|Default.Build.0 = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.SingleImage|x86.ActiveCfg = Debug
+		{B4980E8F-DB54-41D7-AE1C-AF363534904E}.SingleImage|x86.Build.0 = Debug
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Default = CD_ROM|Default
+		CD_ROM|x86 = CD_ROM|x86
+		Debug|Default = Debug|Default
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|x86 = CD_ROM|x86
+		Debug|x86 = Debug|x86
+		DVD-5|x86 = DVD-5|x86
+		Release|x86 = Release|x86
+		SingleImage|x86 = SingleImage|x86
+	EndGlobalSection
+EndGlobal
